@@ -267,8 +267,8 @@ namespace mongo {
     }
 
     // -- status framework ---
-    WebStatusPlugin::WebStatusPlugin( const string& secionName , double priority , const string& subheader ) 
-        : Prioritizable(priority), _name( secionName ) , _subHeading( subheader ) {
+    WebStatusPlugin::WebStatusPlugin( const string& sectionName , double priority , const string& subheader ) 
+        : Prioritizable(priority), _name( sectionName ) , _subHeading( subheader ) {
         if ( ! _plugins )
             _plugins = new vector<WebStatusPlugin*>();
         _plugins->push_back( this );

@@ -63,7 +63,7 @@ namespace mongo {
 
     class WebStatusPlugin : public Prioritizable {
     public:
-        WebStatusPlugin( const string& secionName , double priority , const string& subheader = "" );
+        WebStatusPlugin( const string& sectionName , double priority , const string& subheader = "" );
         virtual ~WebStatusPlugin(){}
         
         virtual void run( stringstream& ss ) = 0;
